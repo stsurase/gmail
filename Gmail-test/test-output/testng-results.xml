@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-31T08:11:24Z" name="Default suite" finished-at="2024-03-31T08:13:02Z" duration-ms="97300">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:ParatusSystems.TestRunner@83298d7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-03-31T08:11:24Z" name="Default test" finished-at="2024-03-31T08:13:02Z" duration-ms="97300">
+      <class name="ParatusSystems.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:ParatusSystems.TestRunner@83298d7]" started-at="2024-03-31T08:11:24Z" name="setUpClass" finished-at="2024-03-31T08:11:24Z" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:ParatusSystems.TestRunner@83298d7]" started-at="2024-03-31T08:11:25Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-31T08:12:34Z" duration-ms="69366" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["write test Step on Compose Gmail"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Write the test cases in Gmail"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.manage()" because "com.stepdefinitions.CustomeHooks.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.manage()" because "com.stepdefinitions.CustomeHooks.driver" is null
+at com.stepdefinitions.CustomeHooks.implicitlyWait(CustomeHooks.java:30)
+at com.stepdefinitions.GmailTestCases.enterUserId(GmailTestCases.java:32)
+at ✽.Enter User Email ID(file:src/test/resources/Features/Gmail.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:ParatusSystems.TestRunner@83298d7]" started-at="2024-03-31T08:12:37Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-31T08:13:02Z" duration-ms="25063" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter details in mail"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Write the test cases in Gmail"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.clickOnCompose" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.clickOnCompose" is null
+at com.pageobject.HomePage.clickOnComposeButton(HomePage.java:52)
+at com.stepdefinitions.GmailTestCases.loginAmazonAccount(GmailTestCases.java:48)
+at ✽.Click on Compose(file:src/test/resources/Features/Gmail.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:ParatusSystems.TestRunner@83298d7]" started-at="2024-03-31T08:13:02Z" name="tearDownClass" finished-at="2024-03-31T08:13:02Z" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- ParatusSystems.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
